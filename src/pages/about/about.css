@@ -1,0 +1,48 @@
+section.company {
+  margin-top: 6rem;
+  padding: 2rem 0;
+}
+section.company .container h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #16a34a;
+}
+section.company .container .row {
+  justify-content: center;
+  align-items: center;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+section.company .container .row .col {
+  background-color: #dff2e6;
+  border-radius: 0.5rem;
+}
+section.company .container .row .col .row {
+  justify-content: center;
+  align-items: center;
+}
+section.company .container .row .col .row .col {
+  overflow: hidden;
+}
+section.company .container .row .col .row .col .image {
+  border-radius: 0.5rem;
+  max-width: 500px;
+  overflow: hidden;
+}
+section.company .container .row .col .row .col .image img {
+  transition: 1s;
+}
+section.company .container .row .col .row .col .image img:hover {
+  transform: scale(105%);
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=about.css.map */

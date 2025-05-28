@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- owl fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <!-- inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <!-- roboto fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- font for logo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <!-- font awsome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- bootsrap cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- swiper js cdn -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="./src/main.css">
+      <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <title>GreenMart</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dar navbar-light px-4 fixed-top shadow-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-2 d-flex gap-1 justify-content-center align-items-center" href="#">
+          <img src="./images/logo2.png" alt="Logo" width="60" height="40" class="d-inline-block align-text-top" />
+          <h2 class="mb-0">GreenMart</h2>
+        </a>
+
+        <div class="d-none d-lg-flex justify-content-end flex-grow-1">
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./src/pages/about/about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="./src/pages/contact/contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="./src/pages/faq/faq.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 gap-3">
+              <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="./src/pages/about/about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link " href="./src/pages/contact/contact.html">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="./src/pages/faq/faq.html">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators (Dots) -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+          aria-current="true"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner ">
+        <div class="carousel-item active" style="background-image: url('./images/slider1.png');">
+          <div class="carousel-caption">
+            <p>Weekend Discount</p>
+            <h1>Shopping with us<br>
+              for better quality and the<br>
+              best price</h1>
+            <p>We have prepared special discounts for you on grocery products. <br>
+              Don't miss these opportunities...</p>
+            <div class="button d-flex gap-3 align-items-center">
+              <div class="discount d-flex align-items-center gap-2 mt-1">
+                <h4 class="text-success">$27</h4>
+                <h5 class="text-danger"><s>$21</s></h5>
+              </div>
+              <a href="#" class="btn-purple text-light">Shop Now</a>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-image: url('./images/slider2.png');">
+          <div class="carousel-caption">
+            <p>Weekend Discount</p>
+            <h1>Get the best quality <br>
+              products at the lowest <br>
+              prices</h1>
+            <p>We have prepared special discounts for you on organic breakfast <br>
+              products.</p>
+            <div class="button d-flex gap-3 align-items-center">
+              <div class="discount d-flex align-items-center gap-2 mt-1">
+                <h4 class="text-success">$21</h4>
+                <h5 class="text-danger"><s>$59</s></h5>
+              </div>
+              <a href="#" class="btn-purple text-light">Shop Now</a>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-image: url('./images/slider3.png');">
+          <div class="carousel-caption">
+            <p>Weekend Discount</p>
+            <h1>Bringing you the best products <br> with the best deals, <br> every day made better.</h1>
+            <p>We have prepared special discounts for you on grocery <br>
+              products. Don't miss these opportunities...</p>
+            <div class="button d-flex gap-3 align-items-center">
+              <div class="discount d-flex align-items-center gap-2 mt-1">
+                <h4 class="text-success">$27.99</h4>
+                <h5 class="text-danger"><s>$56</s></h5>
+              </div>
+              <a href="#" class="btn-purple text-light">Shop Now</a>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </header>
+  <section class="top-products">
+    <div class="container">
+      <h1 class="text-center">Offer Ends in</h1>
+      <div class="wrapper d-flex justify-content-center align-items-center">
+        <div class="timer d-flex gap-3">
+          <div class="day">
+            <p><span class="day-val">00</span>d</p>
+          </div>
+          <div class="hour">
+            <p><span class="hour-val">00</span>h</p>
+          </div>
+          <div class="minute">
+            <p><span class="minute-val">00</span>m</p>
+          </div>
+          <div class="seconds">
+            <p><span class="second-val">00</span>s</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="discount">
+                <p>10%</p>
+              </div>
+              <div class="image">
+                <img src="./images/chips2.png" alt="" style="height: 200px;">
+              </div>
+              <p>Lays Chips</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="discount">
+                <p>12%</p>
+              </div>
+              <div class="image">
+                <img src="./images/banana.png" alt="" style="height: 200px;">
+              </div>
+              <p>Banana</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="discount">
+                <p>15%</p>
+              </div>
+              <div class="image">
+                <img src="./images/apple-juice.png" alt="" style="height: 200px;">
+              </div>
+              <p>Apple Juice</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="discount">
+                <p>18%</p>
+              </div>
+              <div class="image">
+                <img src="./images/strawberry.png" alt="" style="height: 200px;">
+              </div>
+              <p>Strawberry Cream</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="discount">
+                <p>11%</p>
+              </div>
+              <div class="image">
+                <img src="./images/frozen-pizza.png" alt="" style="height: 200px;">
+              </div>
+              <p>Frozen Pizza</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="discount">
+                <p>5%</p>
+              </div>
+              <div class="image">
+                <img src="./images/prime.png" alt="" style="height: 200px;">
+              </div>
+              <p>Prime Electrolyte Drink</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="discount">
+                <p>22%</p>
+              </div>
+              <div class="image">
+                <img src="./images/frozen-meat.png" alt="" style="height: 200px;">
+              </div>
+              <p>Steaks</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="discount">
+                <p>6%</p>
+              </div>
+              <div class="image">
+                <img src="./images/protein-shake.png" alt="" style="height: 200px;">
+              </div>
+              <p>Protein Shake</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="discount">
+                <p>4%</p>
+              </div>
+              <div class="image">
+                <img src="./images/beer-soda.png" alt="" style="height: 200px;">
+              </div>
+              <p>Cafeen Free Beer Soda</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="discount">
+                <p>13%</p>
+              </div>
+              <div class="image">
+                <img src="./images/mouthwash.png" alt="" style="height: 200px;">
+              </div>
+              <p>Mouthwash</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination "></div>
+
+        <!-- Add Navigation -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+    </div>
+  </section>
+  <main class="products">
+    <div class="container">
+      <div class="heading-container">
+        <p>Top Sales Now</p>
+      </div>
+      <div class="row row-cols-auto  justify-content-center ">
+        <div class="col">
+          <div class="image">
+            <img src="./images/honey.png" alt="" style="height: 200px;">
+          </div>
+          <p>Honey</p>
+          <div class="price">
+            <h5>$50</h5>
+          </div>
+
+        </div>
+
+        <div class="col">
+
+          <div class="image">
+            <img src="./images/tuna.png" alt="" style="height: 200px;">
+          </div>
+          <p>Canned Tuna</p>
+          <div class="price">
+            <h5>$15</h5>
+          </div>
+
+        </div>
+        <div class="col">
+          <div class="image">
+            <img src="./images/tpack.png" alt="" style="height: 200px;">
+          </div>
+          <p>Tea Pack</p>
+          <div class="price">
+            <h5>$8</h5>
+          </div>
+        </div>
+        <div class="col">
+          <div class="image">
+            <img src="./images/pasta.png" alt="" style="height: 200px;">
+          </div>
+          <p>Pasta</p>
+          <div class="price">
+            <h5>$12</h5>
+          </div>
+        </div>
+        <div class="col">
+          <div class="image">
+            <img src="./images/cbar.png" alt="" style="height: 200px;">
+          </div>
+          <p>Chocolate Bar</p>
+          <div class="price">
+            <h5>$8</h5>
+          </div>
+        </div>
+        <div class="col">
+          <div class="image">
+            <img src="./images/flour.png" alt="" style="height: 200px;">
+          </div>
+          <p>Flour</p>
+          <div class="price">
+            <h5>$10</h5>
+          </div>
+        </div>
+        <div class="col">
+          <div class="image">
+            <img src="./images/instant noodles.png" alt="" style="height: 200px;">
+          </div>
+          <p>Instant Noodles</p>
+          <div class="price">
+            <h5>$5</h5>
+          </div>
+        </div>
+        <div class="col">
+          <div class="image">
+            <img src="./images/milk.png" alt="" style="height: 200px;">
+          </div>
+          <p>Milk</p>
+          <div class="price">
+            <h5>$4</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <section class="reviews">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center gap-5">
+        <div class="col  box1 bg-warning">
+          <div class="box">
+            <img src="./images/man1.jpg" alt="">
+            <p>Best store in town! I've been shopping here for months and I've never been disappointed. The staff is friendly and helpful and the prices are unbeatable. I highly recommend this store to anyone looking for quality products at a great price!</p>
+            <h6>-Alex Martin</h6>
+          </div>
+        </div>
+        <div class="col box2">
+          <div class="box">
+            <img src="./images/man2.jpg" alt="">
+            <p>I've been shopping at this store for years and I've never had a bad experience. The selection of products is vast and the staff is always willing to help me find what I'm looking for. The prices are also very competitive.</p>
+            <h6>-Samuel Brown</h6>
+          </div>
+        </div>
+        <div class="col box3">
+          <div class="box">
+            <img src="./images/man3.jpg" alt="">
+            <p>This store is the best! The staff is super friendly and the prices are amazing. I've found some great deals on products that I use all the time. I'll definitely be back!</p>
+            <h6>-Michael Davis</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="map">
+      <div class="container">
+        <h1>Find Our Supershop</h1>
+        <p>Visit our store at your convenience. See the location on the map below:</p>
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57927.28115972886!2d89.35477677655874!3d24.84830250165549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc54e6be2d3683%3A0xc16643d43591659e!2sShompa%20Mart!5e0!3m2!1sen!2sbd!4v1746121021916!5m2!1sen!2sbd"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </div>
+    </div>
+    <div class="main-footer flex-column flex-md-row text-center">
+      <p class="fs-5">Copyright &copy; 2023 Muhammad Mahfuj</p>
+      <div class="pay-method ">
+        <div class="big-screen d-none d-md-flex">
+          <img src="./images/visa.png" alt="">
+          <img src="images/paypal.png" alt="">
+          <img src="./images/mastercard.png" alt="">
+        </div>
+        <div class="small-screen d-flex d-md-none gap-2 mb-3 ">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-paypal"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+        </div>
+      </div>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+
+
+  </footer>
+<script src="./src/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+</body>
+
+</html>
+
